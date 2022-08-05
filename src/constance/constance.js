@@ -5,7 +5,7 @@ const profile = {
 
 const career =
 {
-    "compony":"SoftBank",
+    "compony":"ソフトバンク株式会社",
     "job":"運用エンジニア / 開発エンジニア"
 };
 
