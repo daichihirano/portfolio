@@ -18,12 +18,17 @@ const skill =
     {"lang":"PHP",      "level":10}
 ]
 
-const product =
+const product_temp =
 [
     {
         "title" : "タグインデックス付けアプリ",
         "description" : "タグ付けしたい画像が含まれているフォルダを読み込み，ボタンのクリックでタグ付けをしてフォルダを分けて保存します．"
     }
+]
+
+const product =
+[
+    
 ]
 
 const contact =
