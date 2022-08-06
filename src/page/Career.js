@@ -46,7 +46,7 @@ const Career = (props) => {
 
                                             <ListItem key={key}>
                                                 <Card variant="outlined" elevation={0} sx={{width:'100%', bgcolor: '#f2fcff'}}>
-                                                <Typography fontSize={20}>会社：{career.compony}</Typography>
+                                                <Typography fontSize={20}>学校：{career.compony}</Typography>
 
                                                     専攻：{career.job}<br />
                                                     {("study" in career) ? <div>研究：{career.study}<br /></div> : <div></div>}
