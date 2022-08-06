@@ -34,13 +34,13 @@ function App() {
             <h1 >Welcom to MyPortForlio</h1>
           </Grid>
           <Grid item xs="auto">
-            <Link to="/home"><Chip label="Home" variant='outlined' clickable='true'/></Link>
+            <Link to="/home"><Chip label="Home" variant='outlined' clickable={true}/></Link>
           </Grid>
           <Grid item xs="auto">
-            <Link to="/product"><Chip label="Product" variant='outlined' clickable="true" /></Link>
+            <Link to="/product"><Chip label="Product" variant='outlined' clickable={true} /></Link>
           </Grid>
           <Grid item xs="auto">
-            <Link to="/contact"><Chip label="Contact" variant='outlined' clickable="true" /></Link>
+            <Link to="/contact"><Chip label="Contact" variant='outlined' clickable={true} /></Link>
           </Grid>
         </Grid>
       </div>

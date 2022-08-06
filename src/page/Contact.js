@@ -6,12 +6,11 @@ const Contact = (props)=>{
             <h3>
                 連絡先
             </h3>
-            {console.log(props.contact)}
-            {props.contact.map((contact ,key)=> (
+            {props.contact.map((contact, key)=> (
                 contact.type === 'E-mail'?
-                <div id={key}>{contact.type} : {contact.content}</div>
+                <div key={key}>{contact.type} : {contact.content}</div>
                 :
-                <a href ={contact.content}>{contact.type}<br/></a>
+                <a href ={contact.content} key={key}>{contact.type}<br/></a>
             ))}
         </div>
 

@@ -9,8 +9,8 @@ const Product = (props)=>{
             {props.product.length>0 ? props.product.map((product ,key)=> (
                 <div>
                     <div>作品{key+1}</div>
-                    <div id={key}>タイトル : {product.title} </div>
-                    <div id={key}>説明概要 : {product.description}</div>
+                    <div>タイトル : {product.title} </div>
+                    <div>説明概要 : {product.description}</div>
                 </div>
             )):
             <div>
