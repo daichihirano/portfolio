@@ -1,14 +1,28 @@
 import React from "react";
-
+import {
+    Card,
+    CardContent,
+    Rating,
+    Typography
+} from '@mui/material';
 const Skill = (props)=>{
     return (
-        <div>
-            スキル：習得度
-            {props.skill.map((skill ,key)=> (
-                <div id={key}>{skill.lang} : {skill.level}</div>
-            ))}
-        </div>
-
+        <Card variant="outlined">
+            <CardContent>
+                <h3>
+                    スキル
+                </h3>
+                <div>
+                    スキルと習得度
+                    {props.skill.map((skill, key)=> (
+                        <div key={key}>
+                        <Typography>{skill.lang}</Typography>
+                        <Rating name="half-rating-read" defaultValue={skill.level} precision={0.1} readOnly></Rating>
+                        </div>
+                    ))}
+                </div>
+            </CardContent>
+        </Card>
     )
 }
 export default Skill;

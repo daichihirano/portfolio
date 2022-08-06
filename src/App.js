@@ -5,7 +5,10 @@ import {
   Route,
   Link
 } from 'react-router-dom';
-import {Chip} from '@mui/material';
+import {
+  Chip,
+  Grid
+} from '@mui/material';
 
 import './App.css';
 import {
@@ -25,10 +28,21 @@ function App() {
   return (
     <BrowserRouter>
       <div>
-        <h1>Welcom to MyPortForlio</h1>
-        <Link to="/home"><Chip label="Home" variant='outlined' clickable='true'/></Link>
-        <Link to="/product"><Chip label="Product" variant='outlined' clickable="true" /></Link>
-        <Link to="/contact"><Chip label="Contact" variant='outlined' clickable="true" /></Link>
+        
+        <Grid container spacing={0.5} justifyContent="center" alignItems="center">
+          <Grid item xs={12} >
+            <h1 >Welcom to MyPortForlio</h1>
+          </Grid>
+          <Grid item xs="auto">
+            <Link to="/home"><Chip label="Home" variant='outlined' clickable={true}/></Link>
+          </Grid>
+          <Grid item xs="auto">
+            <Link to="/product"><Chip label="Product" variant='outlined' clickable={true} /></Link>
+          </Grid>
+          <Grid item xs="auto">
+            <Link to="/contact"><Chip label="Contact" variant='outlined' clickable={true} /></Link>
+          </Grid>
+        </Grid>
       </div>
       
       <Routes>
