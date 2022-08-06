@@ -1,16 +1,16 @@
 import React from "react";
 
-const Contact = (props)=>{
+const Contact = (props) => {
     return (
         <div>
-            <h3>
+            <h2>
                 連絡先
-            </h3>
-            {props.contact.map((contact, key)=> (
-                contact.type === 'E-mail'?
-                <div key={key}>{contact.type} : {contact.content}</div>
-                :
-                <a href ={contact.content} key={key}>{contact.type}<br/></a>
+            </h2>
+            {props.contact.map((contact, key) => (
+                contact.type === 'E-mail' ?
+                    <div key={key}>{contact.type} : {contact.content}</div>
+                    :
+                    <a href={contact.content} key={key}>{contact.type}<br /></a>
             ))}
         </div>
 

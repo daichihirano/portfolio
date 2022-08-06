@@ -1,33 +1,26 @@
 import React from "react";
 import {
-    Card,
-    CardContent
+    List,
+    ListItem
 } from '@mui/material';
-
 import Career from './Career'
 import Skill from './Skill'
-const Home =(props)=>{
+import Profile from './Profile'
+const Home = (props) => {
     return (
         <div>
-            <h2>
-                Home Page
-            </h2>
-            <Card variant="outlined">
-                <CardContent>
-                    <h3>
-                        自己紹介
-                    </h3>
-                    <div>
-                        名前:{props.profile.name} <br/>
-                        生年月日:{props.profile.birthday}<br/>
-                        出身：{props.profile.origin}
-                    </div>
-                </CardContent>
-            </Card>
-            <Career career={props.career} />
-            <Skill skill={props.skill} />
+            <List>
+                <ListItem sx={{ width: '100%' }}>
+                    <Profile profile={props.profile} />
+                </ListItem>
+                <ListItem sx={{ width: '100%' }}>
+                    <Career career={props.career} />
+                </ListItem>
+                <ListItem sx={{ width: '100%' }}>
+                    <Skill skill={props.skill} />
+                </ListItem>
+            </List>
         </div>
-        
     )
 }
 export default Home
