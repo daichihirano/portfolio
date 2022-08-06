@@ -11,7 +11,7 @@ const Contact = (props)=>{
                 contact.type === 'E-mail'?
                 <div id={key}>{contact.type} : {contact.content}</div>
                 :
-                <div><a href ={contact.content}>{contact.type}</a></div>
+                <a href ={contact.content}>{contact.type}<br/></a>
             ))}
         </div>
 
