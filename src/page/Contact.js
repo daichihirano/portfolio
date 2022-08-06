@@ -8,10 +8,10 @@ const Contact = (props)=>{
             </h3>
             {console.log(props.contact)}
             {props.contact.map((contact ,key)=> (
-                contact.type === 'GitHub'?
-                <a href ={contact.content} >{contact.type}</a>
-                :
+                contact.type === 'E-mail'?
                 <div id={key}>{contact.type} : {contact.content}</div>
+                :
+                <div><a href ={contact.content}>{contact.type}</a></div>
             ))}
         </div>
 

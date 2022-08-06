@@ -34,6 +34,7 @@ const product =
 const contact =
 [
     {"type":"E-mail", "content":"daichi.hirano.sb@gmail.com"},
-    {"type":"GitHub", "content":"https://github.com/daichihirano"}
+    {"type":"GitHub", "content":"https://github.com/daichihirano"},
+    {"type":"LinkedIn", "content":"https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin"}
 ]
 export {profile, career, skill, product, contact}
