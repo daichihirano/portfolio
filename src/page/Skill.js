@@ -1,7 +1,9 @@
 import React from "react";
 import {
     Card,
-    CardContent
+    CardContent,
+    Rating,
+    Typography
 } from '@mui/material';
 const Skill = (props)=>{
     return (
@@ -11,9 +13,12 @@ const Skill = (props)=>{
                     スキル
                 </h3>
                 <div>
-                    スキル：習得度
+                    スキルと習得度
                     {props.skill.map((skill, key)=> (
-                        <div key={key}>{skill.lang} : {skill.level}</div>
+                        <div key={key}>
+                        <Typography>{skill.lang}</Typography>
+                        <Rating name="half-rating-read" defaultValue={skill.level} precision={0.1} readOnly></Rating>
+                        </div>
                     ))}
                 </div>
             </CardContent>

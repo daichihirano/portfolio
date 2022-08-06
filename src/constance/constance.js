@@ -40,11 +40,11 @@ const career =
 
 const skill =
 [
-    {"lang":"C/C++",    "level":50},
-    {"lang":"Python",   "level":20},
-    {"lang":"Java",     "level":20},
-    {"lang":"JavaScript", "level":10},
-    {"lang":"PHP",      "level":10}
+    {"lang":"C/C++",    "level":3.0},
+    {"lang":"Python",   "level":1.5},
+    {"lang":"Java",     "level":2.5},
+    {"lang":"JavaScript", "level":2},
+    {"lang":"PHP",      "level":1.0}
 ]
 
 const product_temp =

@@ -1,5 +1,7 @@
 import React from "react";
 import {
+    Accordion,
+    AccordionSummary,
     Card,
     CardContent
 } from '@mui/material';
@@ -20,13 +22,22 @@ const Career = (props)=>{
                                 期間：{career.periodStart}～{career.periodEnd}<br/><br/>
                             </div>
                             :
-                            <div key={key}>
-                                学校：{career.compony} <br/>
-                                専攻：{career.job}<br/>
-                                {("study" in career)? <div>研究：{career.study}<br/></div>:<div></div>}
-                                期間：{career.periodStart}～{career.periodEnd}<br/><br/>
-                            </div>
+                            <div key={key}></div>
                         ))}
+                        <Accordion>
+                            <AccordionSummary><h3>学歴</h3></AccordionSummary>
+                            {props.career.map((career, key)=>(
+                                career.type === "school"?
+                                <div key={key}>
+                                    学校：{career.compony} <br/>
+                                    専攻：{career.job}<br/>
+                                    {("study" in career)? <div>研究：{career.study}<br/></div>:<div></div>}
+                                    期間：{career.periodStart}～{career.periodEnd}<br/><br/>
+                                </div>
+                                :
+                                <div key={key}></div>
+                        ))}
+                        </Accordion>
                     </div>
                 </CardContent>
             </Card>
