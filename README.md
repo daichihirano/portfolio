@@ -10,7 +10,8 @@
 - html
 - javascript
 - React
-- heroku
+- [heroku](https://jp.heroku.com/home)
+- [UptimeRobot](https://uptimerobot.com/)
 ## 今後追加したい項目
 - 自分で作った作品の追加
 - 実務での成果
