@@ -7,7 +7,7 @@ import {
 const Profile = (props) => {
     return (
         <Grid container xs={12} justifyContent="center" alignItems="center">
-            <Card sx={{ width: '95%' }}>
+            <Card sx={{ width: '85%' }}>
                 <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', alignContent: 'center', bgcolor: "#f7fff7" }}>
 
                     <h2>

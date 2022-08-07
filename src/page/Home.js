@@ -3,8 +3,8 @@ import {
     List,
     ListItem
 } from '@mui/material';
-import Career from './Career'
-import Skill from './Skill'
+import Career from './Career/Career'
+import Skill from './Skill/Skill'
 import Profile from './Profile'
 const Home = (props) => {
     return (
