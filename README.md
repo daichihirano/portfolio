@@ -11,7 +11,7 @@
 - javascript
 - React
 - [heroku](https://jp.heroku.com/home)
-- [UptimeRobot](https://uptimerobot.com/)
+- [UptimeRobot](https://uptimerobot.com/)(herokuをsleepさせないため)
 ## 今後追加したい項目
 - 自分で作った作品の追加
 - 実務での成果
