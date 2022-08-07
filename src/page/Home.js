@@ -5,7 +5,7 @@ import {
 } from '@mui/material';
 import Career from './Career/Career'
 import Skill from './Skill/Skill'
-import Profile from './Profile'
+import Profile from './Profile/Profile'
 const Home = (props) => {
     return (
         <div>
