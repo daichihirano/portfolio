@@ -10,7 +10,7 @@ import Work from "./Work";
 const Career = (props) => {
     return (
         <Grid container sx={12} justifyContent="center" alignItems="center">
-            <Card sx={{ width: '85%' }}>
+            <Card sx={{ width: '95%' }} md={{width:'85%'}}>
                 <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', alignContent: 'center', bgcolor: "#e7f0fd" }}>
                     <h2>経歴</h2>
                     <Work career={props.career} />
