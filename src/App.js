@@ -28,7 +28,7 @@ import Contact from './page/Contact'
 function App() {
   return (
     <BrowserRouter>
-      <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', alignContent: 'center' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', alignContent: 'center', background: '#fdd6bd'}}>
         <h1 >Welcom to MyPortfolio</h1>
         <p>石川出身東京在住エンジニアの卵のポートフォリオ<br />いっぱい勉強してフロントエンドもバックエンドも頑張ります<br />スマホアプリ作りたいです</p>
         <Box sx={{ flexDirection: 'row' }}>

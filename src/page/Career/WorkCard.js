@@ -13,7 +13,7 @@ import { TbTool } from "react-icons/tb";
 
 const WorkCard = (props) => {
     return (
-        <Card variant="outlined" elevation={0} sx={{ width: '100%', bgcolor: '#f2fcff' }}>
+        <Card variant="outlined" elevation={3} sx={{ width: '100%', bgcolor: '#fffcf2' }}>
             <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                 <HiOutlineOfficeBuilding size={40} />
                 <Typography fontSize={20}>{props.career.compony}</Typography>

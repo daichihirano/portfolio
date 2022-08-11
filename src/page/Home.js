@@ -1,15 +1,15 @@
 import React from "react";
 import {
     List,
-    ListItem
+    ListItem,
+    Box
 } from '@mui/material';
 import Career from './Career/Career'
 import Skill from './Skill/Skill'
 import Profile from './Profile/Profile'
 const Home = (props) => {
     return (
-        <div>
-            <List>
+            <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', alignContent: 'center' , background: 'linear-gradient(to bottom,#fdd6bd,#f794a4 )'}}>
                 <ListItem sx={{ width: '100%' }}>
                     <Profile profile={props.profile} />
                 </ListItem>
@@ -19,8 +19,7 @@ const Home = (props) => {
                 <ListItem sx={{ width: '100%' }}>
                     <Skill skill={props.skill} />
                 </ListItem>
-            </List>
-        </div>
+            </Box>
     )
 }
 export default Home

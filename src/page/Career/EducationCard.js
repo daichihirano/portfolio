@@ -12,7 +12,7 @@ import {
 import { FaUniversity } from "react-icons/fa";
 const EducationCard = (props) => {
     return (
-        <Card variant="outlined" elevation={0} sx={{ width: '100%', bgcolor: '#f2fcff' }}>
+        <Card variant="outlined" elevation={3} sx={{ width: '100%', bgcolor: '#fffcf2' }}>
             <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                 <FaUniversity size={40} />
                 <Typography fontSize={20}>{props.career.compony}</Typography>

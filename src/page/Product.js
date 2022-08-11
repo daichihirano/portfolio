@@ -1,9 +1,9 @@
 import React from "react";
-
+import { Box } from "@mui/system";
 const Product = (props) => {
     return (
-        <div>
-            <h2>
+        <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', alignContent: 'center' ,background: '#fdd6bd'}}>
+                 <h2>
                 作品紹介
             </h2>
             {props.product.length > 0 ? props.product.map((product, key) => (
@@ -14,10 +14,10 @@ const Product = (props) => {
                 </div>
             )) :
                 <div>
-                    まだ作品がありません。<br />これから頑張ります。
+                    まだ作品がありません。<br />これから頑張ります。<br />画面下の変な色の修正方法教えてください。
                 </div>
             }
-        </div>
+        </Box>
 
     )
 }
