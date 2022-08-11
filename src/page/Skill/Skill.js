@@ -7,13 +7,15 @@ import {
 import SkillList from "./SkillList";
 const Skill = (props) => {
     return (
-        <Card sx={{ width: '95%' }} md={{width:'85%'}}>
-            <Box sx={{ display: 'flesx', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', alignContent: 'center', bgcolor: "#ffece2" }}>
-                <h2>スキル</h2>
-                <div>スキルと習得度</div>
-                <SkillList skill={props.skill} />
-            </Box>
-        </Card>
+        <Grid container sx={12} justifyContent="center" alignItems="center">
+            <Card sx={{ width: '95%' }} md={{width:'85%'}}>
+                <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', alignContent: 'center', bgcolor: "#ffece2" }}>
+                    <h2>スキル</h2>
+                    <div>スキルと習得度</div>
+                    <SkillList skill={props.skill} />
+                </Box>
+            </Card>
+        </Grid>
     )
 }
 export default Skill;
