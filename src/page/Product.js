@@ -18,7 +18,6 @@ const Product = (props) => {
                 </div>
             }
         </Box>
-
     )
 }
 export default Product;

@@ -3,24 +3,33 @@ import {
     Card,
     Typography,
     Box,
-    Grid
+    Stack
 } from '@mui/material';
 import Framework from "./Framework";
+import Purpose from "./Purpose";
 import Language from "./Language"
 
 const SkillCard = (props) => {
     return (
-        <Card elevation={3}>
-            <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', alignContent: 'center', bgcolor: "#fffcf2" }}>
-                <Grid container  sx={{justifyContent: 'center', alignItems: 'center', alignContent: 'center',}}>
-                    <Language skill={props.skill} />
+        <Card elevation={3} sx={{bgcolor: "#fffcf2"}} >
+            <Stack container  sx={{justifyContent: 'center', alignItems: 'center', alignContent: 'center',}}>
+                <Language skill={props.skill} />
+                <Box>
                     {("framework" in props.skill) ?
                         <Framework skill={props.skill} />
                         :
                         <div></div>}
+                </Box>
+                <Box>
+                    {("purpose" in props.skill) ?
+                        <Purpose skill={props.skill} />
+                        :
+                        <div></div>}
+                </Box>
+                <Box>
                     <Typography fontSize={14}><br/>{props.skill.description}</Typography>
-                </Grid>
-            </Box>
+                </Box>
+            </Stack>
         </Card>
     )
 }

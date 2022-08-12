@@ -1,24 +1,29 @@
 import React from "react";
 import {
-    Card,
+    Chip,
     Typography,
-    Box
+    Box,
+    Paper
 } from '@mui/material';
 import {
     HiOutlineOfficeBuilding,
     HiOutlineCalendar,
-    HiOutlineDesktopComputer
+    HiOutlineDesktopComputer,
+    
 } from "react-icons/hi";
+import {
+    BiCodeBlock
+} from "react-icons/bi";
 import { TbTool } from "react-icons/tb";
 
 const WorkCard = (props) => {
     return (
-        <Card variant="outlined" elevation={3} sx={{ width: '100%', bgcolor: '#fffcf2' }}>
+        <Paper variant="outlined" sx={{ width: '100%', bgcolor: '#fffcf2' }}>
             <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                 <HiOutlineOfficeBuilding size={40} />
                 <Typography fontSize={20}>{props.career.compony}</Typography>
             </Box>
-            <hr />
+            <hr color="#b0b0b0" size="5px"/>
             <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                 <TbTool size={25} />
                 職種：{props.career.job}<br />
@@ -31,7 +36,15 @@ const WorkCard = (props) => {
                 <HiOutlineCalendar size={25} />
                 期間：{props.career.periodStart}～{props.career.periodEnd}<br />
             </Box>
-        </Card>
+            <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                <BiCodeBlock size={25} />
+                スキル：
+                {props.career.skill.map((skill) =>
+                    <Chip variant="outlined" label={skill} size="small"/>
+
+                )}
+            </Box>
+        </Paper>
     )
 }
 export default WorkCard;

@@ -18,7 +18,6 @@ const SkillList = (props) => {
                 ))}
             </Grid>
             </Box>
-
         </List>
     )
 }

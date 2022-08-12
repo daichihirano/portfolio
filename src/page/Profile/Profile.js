@@ -4,7 +4,7 @@ import {
     Box,
     Grid
 } from '@mui/material';
-const Profile = (props) => {
+const Profile = ({profile}) => {
     return (
         <Grid container justifyContent="center" alignItems="center">
             <Card sx={{ width: '95%' }} md={{width:'85%'}}>
@@ -13,9 +13,9 @@ const Profile = (props) => {
                         自己紹介
                     </h2>
                     <div>
-                        名前：{props.profile.name} <br />
-                        生年月日：{props.profile.birthday}<br />
-                        出身：{props.profile.origin}
+                        名前：{profile.name} <br />
+                        生年月日：{profile.birthday}<br />
+                        出身：{profile.origin}
                     </div>
                 </Box>
             </Card>
