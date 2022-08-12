@@ -71,7 +71,7 @@ const skill =
             "lang": "Python",
             "level": 1.5,
             "framework": [{ "name": "PyTorch", "level": 1.5 }],
-            "description":"画像に写っている物体が「○○」か「○○ではない」かの二値分類を実装しました。",
+            "description":"画像に写っている物体が「○○である」か「○○ではない」かの二値分類を実装しました。",
             "purpose":["機械学習"]
         },
         {
@@ -102,7 +102,7 @@ const product =
 const contact =
     [
         { "type": "E-mail", "content": "daichi.hirano.sb@gmail.com" },
-        { "type": "GitHub", "content": "https://github.com/daichihirano", "icon":"FiGithub" },
-        { "type": "LinkedIn", "content": "https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin", "icon":"Filinkedin" }
+        { "type": "GitHub", "content": "https://github.com/daichihirano" },
+        { "type": "LinkedIn", "content": "https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin" }
     ]
 export { profile, career, skill, product, contact }
