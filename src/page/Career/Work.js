@@ -9,7 +9,7 @@ import WorkList from "./WorkList";
 
 const Work = (props) => {
     return (
-        <Accordion defaultExpanded={true} sx={{ width: '90%', bgcolor: "#fffcf2" }}>
+        <Accordion defaultExpanded={true} sx={{ width: '90%', bgcolor: "#d5d7da" }}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}><h3>職歴</h3></AccordionSummary>
             <WorkList career={props.career} />
 

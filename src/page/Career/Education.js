@@ -8,7 +8,7 @@ import EducationList from "./EducationList";
 
 const Education = (props) => {
     return (
-        <Accordion sx={{ width: '90%', bgcolor: "#fffcf2" }}>
+        <Accordion sx={{ width: '90%', bgcolor: "#d5d7da" }}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}><h3>学歴</h3></AccordionSummary>
             <EducationList career={props.career} />
         </Accordion>

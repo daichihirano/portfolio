@@ -8,9 +8,9 @@ const Profile = ({profile}) => {
     return (
         <Grid container justifyContent="center" alignItems="center">
             <Card sx={{ width: '95%' }} md={{width:'85%'}}>
-                <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', alignContent: 'center', bgcolor: "#ffecd2" }}>
+                <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', alignContent: 'center', bgcolor: "#f5f7fa" }}>
                     <h2>
-                        自己紹介
+                        <font color="#333333">自己紹介</font>
                     </h2>
                     <div>
                         名前：{profile.name} <br />

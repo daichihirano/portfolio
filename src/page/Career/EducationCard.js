@@ -11,12 +11,15 @@ import {
     HiOutlineLightBulb
 } from "react-icons/hi";
 import {
+    ImNewspaper
+} from "react-icons/im";
+import {
     BiCodeBlock
 } from "react-icons/bi";
 import { FaUniversity } from "react-icons/fa";
 const EducationCard = (props) => {
     return (
-        <Paper variant="outlined" sx={{ width: '100%', bgcolor: '#fffcf2'}}>
+        <Paper sx={{ width: '100%', bgcolor: '#ffffff'}}>
             <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                 <FaUniversity size={40} />
                 <Typography fontSize={20}>{props.career.compony}</Typography>
@@ -33,6 +36,13 @@ const EducationCard = (props) => {
                 </Box>
                 :
                 <div></div>}
+            {("paper" in props.career) ?
+            <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                <ImNewspaper size={25} />
+                論文：<a href={props.career.paper.URL}><font color="#000000">{props.career.paper.name}</font></a>
+            </Box>
+            :
+            <div></div>}
             <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                 <HiOutlineCalendar size={25} />
                 期間：{props.career.periodStart}～{props.career.periodEnd}
@@ -41,7 +51,7 @@ const EducationCard = (props) => {
                 <BiCodeBlock size={25} />
                 スキル：
                 {props.career.skill.map((skill) =>
-                    <Chip variant="outlined" label={skill} size="small"/>
+                    <Chip variant="outlined" label={skill} size="small" sx={{background:"#eef1f5"}}/>
 
                 )}
             </Box>

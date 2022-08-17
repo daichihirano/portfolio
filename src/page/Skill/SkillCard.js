@@ -5,14 +5,31 @@ import {
     Box,
     Stack
 } from '@mui/material';
+import {
+    styled
+} from '@mui/system';
 import Framework from "./Framework";
 import Purpose from "./Purpose";
 import Language from "./Language"
 
 const SkillCard = (props) => {
+    const StyledBox =styled(Box)({
+        display:'flex',
+        justifyContent:'center',
+        alignmentItems:'center',
+        alignContent:'center',
+        padding:'10px'
+    })
+    const StyledCard =styled(Card)({
+        marginLeft:'10px',
+        marginRight:'10px',
+        backgroundColor:"#d5d7da",
+        elevation:3
+    })
+
     return (
-        <Card elevation={3} sx={{bgcolor: "#fffcf2"}} >
-            <Stack container  sx={{justifyContent: 'center', alignItems: 'center', alignContent: 'center',}}>
+        <StyledCard>
+            <Stack container  >
                 <Language skill={props.skill} />
                 <Box>
                     {("framework" in props.skill) ?
@@ -26,11 +43,11 @@ const SkillCard = (props) => {
                         :
                         <div></div>}
                 </Box>
-                <Box>
+                <StyledBox>
                     <Typography fontSize={14}><br/>{props.skill.description}</Typography>
-                </Box>
+                </StyledBox>
             </Stack>
-        </Card>
+        </StyledCard>
     )
 }
 export default SkillCard

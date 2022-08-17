@@ -8,7 +8,7 @@ const Purpose = (props) => {
     return (
        <Grid container sx={{justifyContent: 'center', alignItems: 'center', aliginContent: 'center'}}>
            {props.skill.purpose.map((purpose) =>
-                <Chip variant="contained" label={purpose} size="small"/>
+                <Chip variant="outlined" label={purpose} size="small" sx={{background:"#eef1f5"}}/>
             )}
         </Grid>
     )

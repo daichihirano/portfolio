@@ -21,6 +21,7 @@ const career =
             "compony": "金沢大学大学院",
             "job": "機械科学専攻",
             "study": "自動運転自動車のソフトウェア開発",
+            "paper":{"name":"LiDAR- and Radar-Based Robust Vehicle Localization with Confidence Estimation of Matching Results", "URL":"https://pubmed.ncbi.nlm.nih.gov/35591236/"},
             "periodStart": "2020/04",
             "periodEnd": "2022/03",
             "skill":["C/C++", "Python"]
@@ -30,6 +31,7 @@ const career =
             "compony": "金沢大学",
             "job": "機械工学類",
             "study": "自動運転自動車のソフトウェア開発",
+            "paper":{"name":"LiDAR and Radar Sensor Fusion for Localizing Autonomous Vehicles", "URL":"https://www.jstage.jst.go.jp/article/jsaeronbun/51/5/51_20204428/_article/-char/en"},
             "periodStart": "2018/04",
             "periodEnd": "2020/03",
             "skill":["C/C++", "MATLAB"]
@@ -57,14 +59,14 @@ const skill =
             "lang": "Java",
             "level": 2.5,
             "framework": [{ "name": "SpringBoot", "level": 2.0 }],
-            "description":"SpringBootを利用して基本的なAPIからDBアクセスまで実装しました。",
+            "description":"SpringBootを利用して基本的なwebAPIからDBアクセスまで実装しました。",
             "purpose":["バックエンド"]
         },
         {
             "lang": "JavaScript",
             "level": 2,
-            "framework": [{ "name": "React", "level": 2.0 }, { "name": "jQuery", "level": 0.5 }],
-            "description":"Reactを利用してこのサイトを作れるレベル。",
+            "framework": [{ "name": "React", "level": 2.5 }, { "name": "jQuery", "level": 1.5 }, { "name": "BootStrap", "level": 0.5 }],
+            "description":"Reactを利用してこのサイトを作れるレベル。研修でReactを学んだあとに業務でjQueryを使っています。",
             "purpose":["Webアプリ"]
         },
         {
@@ -76,8 +78,8 @@ const skill =
         },
         {
             "lang": "PHP",
-            "level": 1.0,
-            "description":"Udemyで基本文法と簡単なAPIを学んだレベル。",
+            "level": 1.5,
+            "description":"Udemyで基本文法と簡単なwebAPIを学んだレベル。",
             "purpose":["バックエンド"]
         },
         {

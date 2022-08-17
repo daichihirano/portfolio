@@ -18,7 +18,7 @@ import { TbTool } from "react-icons/tb";
 
 const WorkCard = (props) => {
     return (
-        <Paper variant="outlined" sx={{ width: '100%', bgcolor: '#fffcf2' }}>
+        <Paper variant="outlined" sx={{ width: '100%', bgcolor: '#ffffff' }}>
             <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                 <HiOutlineOfficeBuilding size={40} />
                 <Typography fontSize={20}>{props.career.compony}</Typography>
@@ -40,7 +40,7 @@ const WorkCard = (props) => {
                 <BiCodeBlock size={25} />
                 スキル：
                 {props.career.skill.map((skill) =>
-                    <Chip variant="outlined" label={skill} size="small"/>
+                    <Chip variant="outlined" label={skill} size="small" sx={{background:"#eef1f5"}}/>
 
                 )}
             </Box>

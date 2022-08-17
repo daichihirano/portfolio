@@ -8,26 +8,29 @@ import {
 
 const Contact = (props) => {
     return (
-        <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', alignContent: 'center' , background: '#fdd6bd'}}>
-            <h2>
-                連絡先
-            </h2>
-            {props.contact.map((contact, key) => (
-                contact.type === 'E-mail' ?
-                <div key={key}>{contact.type} : {contact.content}</div>
-                :
-                contact.type === 'GitHub' ?
-                <a href={contact.content} key={key}>
-                    <FiGithub size={60} color="#000000"/>
-                </a>
-                :
-                contact.type === 'LinkedIn' ?
-                <a href={contact.content} key={key}>
-                    <FiLinkedin size={60} color="#000000"/>
-                </a>
-                :
-                <div></div>
-            ))}
+        <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', alignContent: 'center' , background: '#434343'}}>
+            
+                <h2>
+                    <font color='#f5f7fa'>連絡先</font>
+                </h2>
+                {props.contact.map((contact, key) => (
+                    contact.type === 'E-mail' ?
+                    <font color='#f5f7fa'><div key={key}>{contact.type} : {contact.content}</div></font>
+                    :
+                    contact.type === 'GitHub' ?
+                    <a href={contact.content} key={key}>
+                        <FiGithub size={60} color="#f5f7fa"/>
+                    </a>
+                    :
+                    contact.type === 'LinkedIn' ?
+                    <a href={contact.content} key={key}>
+                        <FiLinkedin size={60} color="#f5f7fa"/>
+                    </a>
+                    :
+                    <div></div>
+                ))}
+                
+            
         </Box>
 
     )

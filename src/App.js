@@ -2,13 +2,15 @@ import React from 'react';
 import {
   BrowserRouter,
   Routes,
-  Route,
-  Link
+  Route
 } from 'react-router-dom';
 import {
   Chip,
   Box,
 } from '@mui/material';
+import {
+  styled
+} from '@mui/system';
 
 import './App.css';
 import {
@@ -22,21 +24,42 @@ import {
 import Home from './page/Home'
 import Product from './page/Product'
 import Contact from './page/Contact'
+import NaviButton from './NaviButton'
 
-
+const StyledBox =styled(Box)({
+  display:'flex',
+  flexDirection:'column',
+  justifyContent:'center',
+  alignmentItems:'center',
+  alignContent:'center',
+  background:'#434343',
+  height:{md:'70vh', sx:'40vh'},
+  marginBottom:0,
+  paddingBottom:0
+})
 
 function App() {
   return (
     <BrowserRouter>
-      <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', alignContent: 'center', background: '#fdd6bd'}}>
-        <h1 >Welcom to MyPortfolio</h1>
-        <p>石川出身東京在住エンジニアの卵のポートフォリオ<br />いっぱい勉強してフロントエンドもバックエンドも頑張ります<br />スマホアプリ作りたいです</p>
-        <Box sx={{ flexDirection: 'row' }}>
-          <Link to="/home"><Chip label="Home" variant='outlined' clickable={true} /></Link>
-          <Link to="/product"><Chip label="Product" variant='outlined' clickable={true} /></Link>
-          <Link to="/contact"><Chip label="Contact" variant='outlined' clickable={true} /></Link>
+      <StyledBox >
+        <Box marginLeft={'50px'}>
+          <h1>
+            <font color='#f5f7fa' size={60}>
+              Welcom to MyPortfolio<br/>          
+            </font>
+          </h1>
+          <h1>
+            <font color='#f5f7fa' size={'60'}>
+              Aspring IT Engineer<br/>
+              Frontend & Backend
+            </font>
+          </h1>
         </Box>
-      </Box>
+        <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', aliginContent: 'center'}}>
+          <p><font color='#f5f7fa'>石川出身東京在住エンジニアのポートフォリオ<br/>高専出身で大学院まで機械専攻でした<br/>ITの将来性に期待して転身しました<br/>大学で何も学んでいないからこそ毎日伸びしろ感じてます</font></p>
+          <NaviButton />
+        </Box>
+      </StyledBox>
 
 
       <Routes>
