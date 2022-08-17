@@ -5,7 +5,6 @@ import {
   Route
 } from 'react-router-dom';
 import {
-  Chip,
   Box,
 } from '@mui/material';
 import {
@@ -50,8 +49,8 @@ function App() {
           </h1>
           <h1>
             <font color='#f5f7fa' size={'60'}>
-              Aspring IT Engineer<br/>
-              Frontend & Backend
+              Aspiring IT Engineer<br/>
+              to be Frontend & Backend Developper...
             </font>
           </h1>
         </Box>
@@ -60,7 +59,6 @@ function App() {
           <NaviButton />
         </Box>
       </StyledBox>
-
 
       <Routes>
         <Route path="/home" element={<Home profile={profile} career={career} skill={skill} />} />
