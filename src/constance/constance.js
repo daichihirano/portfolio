@@ -51,7 +51,7 @@ const skill =
             "lang": "C/C++",
             "level": 3.0,
             "framework": [{ "name": "MFC", "level": 2.0 }, { "name": "OpenCV", "level": 2.5 }, {"name":"Arduino", "level":1.5}],
-            "description":"MFCはボタンに応じた機能の追加や画像の描画で利用しました。OpenCVは主にテンプレートマッチングを利用しました。",
+            "description":"MFCは大学院の研究で利用しました。OpenCVは主にテンプレートマッチングを利用しました。",
             "purpose":["組み込みソフト","デスクトップアプリ", "シミュレーション"]
         },
         {
