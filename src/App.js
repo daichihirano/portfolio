@@ -55,7 +55,7 @@ function App() {
           </h1>
         </Box>
         <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', aliginContent: 'center'}}>
-          <p><font color='#f5f7fa'>石川出身東京在住エンジニアのポートフォリオ<br/>高専出身で大学院まで機械専攻でした<br/>ITの将来性に期待して転身しました<br/>大学で何も学んでいないからこそ毎日伸びしろ感じてます</font></p>
+          <p><font color='#f5f7fa'>石川出身東京在住エンジニアのポートフォリオ<br/>高専出身で大学院まで機械専攻でした<br/>大学での研究は自動運転のソフトウェア開発<br/>毎日伸びしろ感じてます</font></p>
           <NaviButton />
         </Box>
       </StyledBox>
