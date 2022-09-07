@@ -9,10 +9,10 @@ import SkillCard from './SkillCard'
 const SkillList = (props) => {
     return (
         <List>
-            <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', alignContent: 'center'}}>
-            <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+            <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', alignContent: 'center', marginLeft:'50px', marginRight:'50px'}}>
+            <Grid container >
                 {props.skill.map((skill, key) => (
-                    <Grid item xs={6} md={4} key={key}>
+                    <Grid item md={4} sx={6} key={key}>
                         <SkillCard skill={skill} />                        
                     </Grid>
                 ))}

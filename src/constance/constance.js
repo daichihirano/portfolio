@@ -10,7 +10,7 @@ const career =
             "type": "compony",
             "compony": "ソフトバンク株式会社",
             "job": "運用エンジニア / 開発エンジニア",
-            "content":"社内向けシステムの監視運用システムの改修",
+            "content":"社内向けシステムの監視運用システムの開発",
             "periodStart": "2022/04",
             "periodEnd": "",
             "skill":["Java", "JavaScript", "PHP"]
@@ -51,7 +51,7 @@ const skill =
             "lang": "C/C++",
             "level": 3.0,
             "framework": [{ "name": "MFC", "level": 2.0 }, { "name": "OpenCV", "level": 2.5 }, {"name":"Arduino", "level":1.5}],
-            "description":"MFCは大学院の研究で利用しました。OpenCVは主にテンプレートマッチングを利用しました。",
+            "description":"MFCは大学院の研究で利用しました。",
             "purpose":["組み込みソフト","デスクトップアプリ", "シミュレーション"]
         },
         {
@@ -62,7 +62,7 @@ const skill =
             "purpose":["バックエンド"]
         },
         {
-            "lang": "JavaScript",
+            "lang": "JavaScript / TypeScript",
             "level": 2,
             "framework": [{ "name": "React", "level": 2.5 }, { "name": "MUI", "level": 2.0 }, { "name": "jQuery", "level": 1.5 }, { "name": "BootStrap", "level": 0.5 }],
             "description":"Reactを利用してこのサイトを作れるレベル。研修でReactを学んだあとに業務でjQueryを使っています。",

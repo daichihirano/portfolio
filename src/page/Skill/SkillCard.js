@@ -3,7 +3,8 @@ import {
     Card,
     Typography,
     Box,
-    Stack
+    Stack,
+    Grid
 } from '@mui/material';
 import {
     styled
@@ -21,8 +22,7 @@ const SkillCard = (props) => {
         padding:'10px'
     })
     const StyledCard =styled(Card)({
-        marginLeft:'10px',
-        marginRight:'10px',
+        margin:'10px',
         backgroundColor:"#d5d7da",
         elevation:3
     })
