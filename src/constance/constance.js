@@ -99,6 +99,8 @@ const product =
     [
         {
             "title":"麻雀の符計算",
+            "level":"EASY(1週間)",
+            "tech":["TypeScript", "React", "MUI", "Vercel"],
             "description":"メンツとか待ちとかを入力すると点数を返します。TypeScript×Reactの練習で作りました。バグ報告待ってます。",
             "url":"https://mahjong-calculator-lac.vercel.app/"
         }
