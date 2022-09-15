@@ -1,6 +1,6 @@
 # 平野大智のポートフォリオ
 ## 概要
-[ポートフォリオ](https://portfolio-woad-omega-60.vercel.app/product)です。
+[ポートフォリオ](https://portfolio-woad-omega-60.vercel.app)です。
 経歴やスキルや作品を紹介します。  
 
 ## 目的
