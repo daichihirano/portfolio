@@ -1,6 +1,6 @@
 # 平野大智のポートフォリオ
 ## 概要
-[ポートフォリオ](https://shielded-wave-09671.herokuapp.com/home)です。    
+[ポートフォリオ](https://portfolio-woad-omega-60.vercel.app)です。
 経歴やスキルや作品を紹介します。  
 
 ## 目的
@@ -10,8 +10,9 @@
 - html
 - javascript
 - React
-- [heroku](https://jp.heroku.com/home)
-- [UptimeRobot](https://uptimerobot.com/)
+- [vercel](https://vercel.com/dashboard)
+- [heroku](https://jp.heroku.com/home)(有料化に伴い廃止)
+- [UptimeRobot](https://uptimerobot.com/)(heroku有料化に伴い廃止)
 ## 今後追加したい項目
 - 自分で作った作品の追加
 - 実務での成果
