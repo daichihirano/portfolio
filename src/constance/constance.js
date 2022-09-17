@@ -64,8 +64,8 @@ const skill =
         {
             "lang": "JavaScript / TypeScript",
             "level": 2,
-            "framework": [{ "name": "React", "level": 2.5 }, { "name": "MUI", "level": 2.0 }, { "name": "jQuery", "level": 1.5 }, { "name": "BootStrap", "level": 0.5 }],
-            "description":"Reactを利用してこのサイトを作れるレベル。研修でReactを学んだあとに業務でjQueryを使っています。",
+            "framework": [{ "name": "React", "level": 2.5 }, { "name": "MUI", "level": 2.0 }, { "name": "jQuery", "level": 1.5 }, { "name": "BootStrap", "level": 0.5 }, { "name": "GAS", "level": 0.5 }],
+            "description":"Reactを利用してこのサイトを作れるレベル。",
             "purpose":["Webアプリ"]
         },
         {
