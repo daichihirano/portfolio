@@ -50,7 +50,7 @@ const skill =
         {
             "lang": "C/C++",
             "level": 3.0,
-            "framework": [{ "name": "MFC", "level": 2.0 }, { "name": "OpenCV", "level": 2.5 }, {"name":"Arduino", "level":1.5}],
+            "framework": [{ "name": "MFC", "level": 2.0 },  {"name":"Arduino", "level":1.5}],
             "description":"MFCは大学院の研究で利用しました。",
             "purpose":["組み込みソフト","デスクトップアプリ", "シミュレーション"]
         },
@@ -78,13 +78,13 @@ const skill =
         {
             "lang": "PHP",
             "level": 1.5,
+            "framework": [{ "name": "Laravel", "level": 1.0 }],
             "description":"Udemyで基本文法と簡単なwebAPIを学んだレベル。",
             "purpose":["バックエンド"]
         },
         {
             "lang": "C#",
             "level": 0.3,
-            "framework":[{"name":"OpenCVSharp", "level":0.3}],
             "description":"ステレオカメラを用いて特徴点ベースでの距離計測を行ってました。",
         },
         {
