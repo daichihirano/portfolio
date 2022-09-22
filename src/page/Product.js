@@ -1,15 +1,17 @@
 import React from "react";
 import { Box } from "@mui/system";
 import { Paper, Chip } from "@mui/material";
+
+import kzhpa from "../constance/302kzhpa.png";
 const Product = (props) => {
     return (
         <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', alignContent: 'center', background: '#434343' }}>
-            
+            <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', alignContent: 'center', background: '#434343',}}>
                 <h2>
                     <font color='#f5f7fa'>作品紹介</font>
                 </h2>
                 {props.product.length > 0 ? props.product.map((product, key) => (
-                    <Paper sx={{ width: '90%', bgcolor: "#f5f7fa" }}>
+                    <Paper sx={{ width: '90%', bgcolor: "#f5f7fa", margin:'5px'}}>
                         <Box sx={{margin:'10px'}}>
                             <font color='#333333'>
                                 <div>作品{key + 1}</div>
@@ -31,6 +33,16 @@ const Product = (props) => {
                         </font>
                     </div>
                 }
+            </Box>
+            <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', alignContent: 'center', background: '#434343'}}>
+                <Paper sx={{ width: '100%', bgcolor: "#f5f7fa" }}>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', alignContent: 'center', margin:'10px'}}>
+                        <div>作品2：ネコLINE bot</div>
+                        <img src={kzhpa} width='100px' height='100px'></img>
+                    </Box>
+                </Paper>
+            </Box>
+                
             
         </Box>
     )

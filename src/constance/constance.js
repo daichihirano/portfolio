@@ -63,8 +63,8 @@ const skill =
         },
         {
             "lang": "JavaScript / TypeScript",
-            "level": 2,
-            "framework": [{ "name": "React", "level": 2.5 }, { "name": "MUI", "level": 2.0 }, { "name": "jQuery", "level": 1.5 }, { "name": "BootStrap", "level": 0.5 }, { "name": "GAS", "level": 0.5 }],
+            "level": 3,
+            "framework": [{ "name": "React", "level": 3 }, { "name": "MUI", "level": 2.0 }, { "name": "jQuery", "level": 1.5 }, { "name": "BootStrap", "level": 0.5 }, { "name": "GAS", "level": 1.5 }],
             "description":"Reactを利用してこのサイトを作れるレベル。",
             "purpose":["Webアプリ"]
         },
@@ -100,9 +100,16 @@ const product =
         {
             "title":"麻雀の符計算",
             "level":"EASY(1週間)",
-            "tech":["TypeScript", "React", "MUI", "Vercel"],
+            "tech":["TypeScript", "React", "MUI", "Vercel", "麻雀"],
             "description":"メンツとか待ちとかを入力すると点数を返します。TypeScript×Reactの練習で作りました。バグ報告待ってます。",
             "url":"https://mahjong-calculator-lac.vercel.app/"
+        },
+        {
+            "title":"ネコLINE bot",
+            "level":"SUPER EASY(2日間)",
+            "tech":["GAS", "LINE API", "Youtube API", "ネコ"],
+            "description":"日常生活の嬉しい出来事や嫌な出来事を話しかけてください。たまには「にゃー」と話しかけてください。",
+            "img":"kzhpa"
         }
     ]
 
