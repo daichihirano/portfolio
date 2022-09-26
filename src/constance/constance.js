@@ -13,7 +13,7 @@ const career =
             "content":"社内向けシステムの監視運用システムの開発",
             "periodStart": "2022/04",
             "periodEnd": "",
-            "skill":["Java", "JavaScript", "PHP"]
+            "skill":["Java", "JavaScript", "PHP", "TypeScript", "GAS"]
         },
         {
             "type": "school",
@@ -62,10 +62,17 @@ const skill =
             "purpose":["バックエンド"]
         },
         {
-            "lang": "JavaScript / TypeScript",
+            "lang": "JavaScript",
             "level": 3,
-            "framework": [{ "name": "React", "level": 3 }, { "name": "MUI", "level": 2.0 }, { "name": "jQuery", "level": 1.5 }, { "name": "BootStrap", "level": 0.5 }, { "name": "GAS", "level": 1.5 }],
+            "framework": [{ "name": "React", "level": 3 }, { "name": "MUI", "level": 2.0 }, { "name": "jQuery", "level": 1.5 }, { "name": "BootStrap", "level": 0.5 }],
             "description":"Reactを利用してこのサイトを作れるレベル。",
+            "purpose":["Webアプリ"]
+        },
+        {
+            "lang": "TypeScript",
+            "level": 1,
+            "framework": [{ "name": "React", "level": 1.0 }, { "name": "MUI", "level": 1.5 }],
+            "description":"軽い気持ちでReactに手を付けたらボコボコにされました。",
             "purpose":["Webアプリ"]
         },
         {
@@ -78,9 +85,19 @@ const skill =
         {
             "lang": "PHP",
             "level": 1.5,
-            "framework": [{ "name": "Laravel", "level": 1.0 }],
+            "framework": [{ "name": "Laravel", "level": 1.5 }],
             "description":"Udemyで基本文法と簡単なwebAPIを学んだレベル。",
             "purpose":["バックエンド"]
+        },
+        {
+            "lang": "Google App Script",
+            "level": 1.5,
+            "framework":[{"name":"SpreadSheet", "level":2.0},
+                        {"name":"LINE message API", "level":2.0},
+                        {"name":"YouTube data API", "level":1.0}                
+            ],
+            "description":"仕事で業務効率化で使ってます。",
+            "purpose":["LINE Bot"]
         },
         {
             "lang": "C#",
@@ -105,11 +122,10 @@ const product =
             "url":"https://mahjong-calculator-lac.vercel.app/"
         },
         {
-            "title":"ネコLINE bot",
+            "title":"ネコLINE Bot",
             "level":"SUPER EASY(2日間)",
-            "tech":["GAS", "LINE API", "Youtube API", "ネコ"],
+            "tech":["GAS", "LINE message API", "YouTube data API", "ネコ"],
             "description":"日常生活の嬉しい出来事や嫌な出来事を話しかけてください。たまには「にゃー」と話しかけてください。",
-            "img":"kzhpa"
         }
     ]
 

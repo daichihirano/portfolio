@@ -51,8 +51,9 @@ const EducationCard = (props) => {
                 <BiCodeBlock size={25} />
                 スキル：
                 {props.career.skill.map((skill) =>
-                    <Chip variant="outlined" label={skill} size="small" sx={{background:"#eef1f5"}}/>
-
+                    <Box sx={{margin:"0 2px"}}>
+                        <Chip variant="outlined" label={skill} size="small" sx={{background:"#eef1f5"}}/>
+                    </Box>
                 )}
             </Box>
         </Paper>

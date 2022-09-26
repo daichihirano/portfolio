@@ -1,6 +1,5 @@
 import React from "react";
-import { Box } from "@mui/system";
-import { Paper, Chip } from "@mui/material";
+import { Paper, Chip, Box } from "@mui/material";
 
 import kzhpa from "../constance/302kzhpa.png";
 const Product = (props) => {
@@ -17,11 +16,13 @@ const Product = (props) => {
                                 <div>作品{key + 1}</div>
                                 <div>タイトル : <a href={product.url}>{product.title}</a></div>
                                 <div>作成難易度：{product.level}</div>
-                                <div>
+                                <Box sx={{display:"flex", flexDirection:"row"}}>
                                     使用技術：{product.tech.map((tech, teckKey) =>(
-                                        <Chip variant="outlined" label={tech} size="small" sx={{background:"#d5d7da"}} key={teckKey}/>
+                                        <Box sx={{margin:"0 2px"}}>
+                                            <Chip variant="outlined" label={tech} size="small" sx={{background:"#d5d7da"}} key={teckKey}/>
+                                        </Box>
                                     ))}
-                                </div>
+                                </Box>
                                 <div>説明概要 : {product.description}</div>
                             </font>
                         </Box>
