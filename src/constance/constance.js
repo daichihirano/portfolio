@@ -51,7 +51,7 @@ const skill =
             "lang": "C/C++",
             "level": 3.0,
             "framework": [{ "name": "MFC", "level": 2.0 },  {"name":"Arduino", "level":1.5}],
-            "description":"MFCは大学院の研究で利用しました。",
+            "description":"自動運転のソフトウェア開発で利用。",
             "purpose":["組み込みソフト","デスクトップアプリ", "シミュレーション"]
         },
         {
@@ -72,14 +72,14 @@ const skill =
             "lang": "TypeScript",
             "level": 1,
             "framework": [{ "name": "React", "level": 1.0 }, { "name": "MUI", "level": 1.5 }],
-            "description":"軽い気持ちでReactに手を付けたらボコボコにされました。",
+            "description":"",
             "purpose":["Webアプリ"]
         },
         {
             "lang": "Python",
             "level": 1.5,
-            "framework": [{ "name": "PyTorch", "level": 1.5 }],
-            "description":"画像に写っている物体が「○○である」か「○○ではない」かの二値分類を実装しました。",
+            "framework": [{ "name": "PyTorch", "level": 1.5 }, { "name": "Django", "level": 1.5 }],
+            "description":"DeepLearningで画像の二値文類程度のことをしてました。",
             "purpose":["機械学習"]
         },
         {
@@ -102,14 +102,22 @@ const skill =
         {
             "lang": "C#",
             "level": 0.3,
-            "description":"ステレオカメラを用いて特徴点ベースでの距離計測を行ってました。",
+            "description":"",
         },
         {
             "lang": "MATLAB",
             "level": 0.4,
             "description":"大学の授業で二重振子の制御シミュレータを実装しました。",
             "purpose":["シミュレーション"]
-        }
+        },
+        {
+            "lang": "Docker",
+            "level": 1.5
+        },
+        {
+            "lang": "Kubernetes",
+            "level": 1.0
+        },
     ]
 
 const product =
